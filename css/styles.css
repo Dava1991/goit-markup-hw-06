@@ -40,22 +40,63 @@ body {
     background-color: #ffffff;
 }
 
-.header {
-    border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+input {
+    font-family: inherit;
+  }
 
-}
+
 
 .cont {
     display: flex;
 }
 
+/* Mobile screen */
 .container {
-    width: 1158px;
+    min-width: 320px;
+    max-width: 428px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding-right: 16px;
+    padding-left: 16px;
+    }
 
-}
+/* Tablet screen */
+@media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+    }
+
+/* Desctop screen */
+@media only screen and (min-width: 1158px) {
+    .container {
+      max-width: 1158px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    }
+
+.section  {
+        padding: 96px 0x;
+        }
+
+@media only screen and (min-width: 1158px) {
+    .section {
+    padding: 120px 0x;
+    }
+    }
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    
+    }
+
+@media only screen and (max-width: 1157px) {
+    .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    }
+    }
 
 .nav {
     display: flex;
@@ -66,6 +107,13 @@ body {
     display: flex;
     gap: 40px;
 }
+
+@media only screen and (max-width: 767px) {
+    .listnav {
+      display: none;
+    }
+    }
+
 
 .link {
     text-decoration: none;
@@ -129,13 +177,77 @@ img {
 }
 
 .liss {
-    display: flex;
-    gap: 24px;
+
 }
 
-.lili {
-    width: calc((100% - 72px) / 4);
+@media only screen and (min-width: 768px) {
+    .liss {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 72px 24px;
+    }
+    }
+    
+    @media only screen and (min-width: 1158px) {
+    .liss {
+      display: flex;
+      gap: 24px;
+    }
+    }
+
+.sect-icons {
+    fill: none;
 }
+
+
+.lili {
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .lili:not(:last-child) {
+      margin-bottom: 72px;
+    }
+    }
+    
+    @media only screen and (min-width: 768px) {
+    .lili {
+      flex-basis: calc((100% - 24px) / 2);
+    }
+    }
+
+    @media only screen and (min-width: 1158px) {
+    .lili {
+      flex-basis: calc((100% - 72px) / 4);
+    }
+    }
+
+.zagolovok {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.025em;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+        color: #2e2f42;
+      }
+      
+@media only screen and (max-width: 767px) {
+      .zagolovok {
+        text-align: center;
+      }
+      }
+      
+@media only screen and (min-width: 1158px) {
+      .zagolovok {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+      }
+      }
+
+
 
 .lilit {
     width: calc((100% - 48px) / 3);
@@ -169,12 +281,16 @@ img {
 }
 
 
-
 .adress {
     font-style: normal;
     margin-left: auto;
 }
 
+@media only screen and (max-width: 767px) {
+    .adress {
+      display: none;
+    }
+    }
 
 .link-ad {
     font-size: 16px;
@@ -188,6 +304,17 @@ img {
 }
 
 .icons {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .icons {
+      display: none;
+    }
+    }
+
+@media only screen and (min-width: 1158px) {
+    .icons {
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -195,9 +322,22 @@ img {
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
-}
+    }
+    }
 
-
+.paragraf {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    
+    }
+      
+@media only screen and (max-width: 1158px) {
+      .paragraf {
+        font-weight: 500;
+      }
+      }
 
 
 
@@ -244,14 +384,7 @@ button {
  color: #4D5AE5;
 }
 
-.zagolovok {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px; 
-}
+
 
 .zago {
     text-align: center;
@@ -263,13 +396,7 @@ button {
 }
 
 
-.paragraf {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
 
-}
 
 
 
