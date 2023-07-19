@@ -48,6 +48,7 @@ input {
 
 .cont {
     display: flex;
+    justify-content: space-between;
 }
 
 /* Mobile screen */
@@ -55,6 +56,7 @@ input {
     min-width: 320px;
     max-width: 428px;
     margin: 0 auto;
+    padding: 0 16px;
     }
 
 /* Tablet screen */
@@ -68,7 +70,6 @@ input {
 @media only screen and (min-width: 1158px) {
     .container {
       max-width: 1158px;
-      margin: 0 auto;
       padding: 0 15px;
     }
     }
