@@ -1,54 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="WebStudio - effective solutions for your business" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>WebStudio</title>
-  </head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
   <body>
     <!--Header section-->
     <header class="header">
       <div class="cont container">
       <nav class="nav">
         <a href="./index.html" class="link link-logo">Web<span class="stu">Studio</span></a>
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
         <ul class="list listnav">
-          <li><a href="./index.html" class="link link-nav">Studio</a></li>
+          <li><a href="./index.html" class="link link-nav current">Studio</a></li>
           <li><a href="./portfolio.html" class="link link-nav">Portfolio</a></li>
           <li><a href="" class="link link-nav">Contacts</a></li>
         </ul>
       </nav>
       <address class="adress">
       <ul class="list listi">
-        <li><a href="mailto:info@devstudio.com" class="link link-ad">info@devstudio.com</a></li>
+        <li><a href="mailto:info@devstudio.com" class="link link-ad link-tel">info@devstudio.com</a></li>
         <li><a href="tel:+110001111111" class="link link-ad">+11 (000) 111-11-11</a></li>
       </ul> 
       </address>
+      <button class="menu-toggle js-open-menu headburger" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon-burger" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+    </button>
       </div>
     </header>
   <!-- Main block -->
