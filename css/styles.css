@@ -158,8 +158,6 @@ fieldset {
     align-items: center;
 }
 
-
-
 .listnav {
     display: flex;
     gap: 40px;
@@ -368,7 +366,7 @@ fieldset {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(var(--grey), var(--grey)), url(../images/people-office@2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office@2x.jpg);
   }
 }
 
@@ -540,7 +538,6 @@ fieldset {
 
 .sect {
     padding: 120px 0;
-
 }
 
 @media (max-width: 1158px) {
@@ -1292,6 +1289,7 @@ fieldset {
   justify-content: space-between;
 }
 
+
 .mencont .knop {
   background-color: rgba(#E7E9FC, 0.1);
 }
@@ -1306,9 +1304,11 @@ fieldset {
   }
 }
 
+@media (max-width: 767px) {
 .headmobmenu {
     display: flex;
     flex-direction: column;
+  }
   }
 
   @media (max-width: 767px) {  
