@@ -873,13 +873,13 @@ body {
     flex-wrap: wrap;
 }
 
-.foo .container {
+.foo .con {
   display: flex;
   align-items: baseline;
 }
 
 @media (max-width: 767px) {
-  .foo .container {
+  .foo .con {
     flex-direction: column;
     gap: 72px;
   }
@@ -887,7 +887,7 @@ body {
 
 
 @media (min-width: 768px) and (max-width: 1157px) {
-   .foo .container {
+   .foo .con {
     max-width: 552px;
     flex-wrap: wrap;
     row-gap: 72px;
