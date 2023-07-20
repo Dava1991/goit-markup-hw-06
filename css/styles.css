@@ -149,7 +149,7 @@ body {
         .header {
           padding: 24px 0;
         }
-
+      }
 
 .nav {
     display: flex;
@@ -180,7 +180,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
-}
+     }
 
 @media (max-width: 767px) {
   .link-logo {
@@ -487,6 +487,7 @@ body {
   .zagolovok {
     text-align: center;
   }
+}
 
 @media (max-width: 1158px) {
   .zagolovok {
@@ -495,7 +496,7 @@ body {
     font-weight: 700;
     line-height: 1.11;
   }
-      
+}   
 
 .icons {
   display: flex;
@@ -541,7 +542,7 @@ body {
   .sect {
     padding: 96px 0;
   }
-
+}
 
 /**
   |============================
@@ -1285,6 +1286,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .mencont .knop {
   background-color: rgba(#E7E9FC, 0.1);
 }
@@ -1297,6 +1299,7 @@ body {
   .menu-toggle {
     display: none;
   }
+}
 
 .headmobmenu {
     display: flex;
