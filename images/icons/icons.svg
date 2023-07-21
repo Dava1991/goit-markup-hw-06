@@ -66,5 +66,8 @@
     <symbol id="modal-bg" viewBox="0 0 22 32">
 <path fill="#fcfcfc" style="fill: var(--color1, #fcfcfc)" d="M0.38 0.108h21.695c0.12 0 0.217 0.097 0.217 0.217v31.241c0 0.12-0.097 0.217-0.217 0.217h-21.695c-0.12 0-0.217-0.097-0.217-0.217v-31.241c0-0.12 0.097-0.217 0.217-0.217z"></path>
 </symbol>
+<symbol id="icon-burger" viewBox="0 0 47 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.961 29.154h42.965M1.961 15.615h42.965M1.961 2.077h42.965"></path>
+</symbol>
   </defs>
 </svg>
