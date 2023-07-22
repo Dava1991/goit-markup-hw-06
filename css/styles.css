@@ -303,30 +303,31 @@ fieldset {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding: 24px 0;
     display: flex;
     gap: 40px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .link-ad:hover, 
 .link-ad:focus {
     color: #404BBF;
   }
 
+
   @media (max-width: 767px) {
     .link-ad {
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-      }
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
     }
 
-  @media (min-width: 768px) {
+    @media (min-width: 768px) {
     .link-ad {
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.04em;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.04em;
       }
     }
 
@@ -463,7 +464,7 @@ fieldset {
       }
     }
     
-@media (max-width: 1158px) {
+@media (min-width: 1158px) {
       .lili {
      height: auto;
        }
@@ -748,6 +749,7 @@ fieldset {
 
 .zaz {
     font-size: 36px;
+    text-align: center;
     line-height: 1.11;
     color: #2e2f42;
     margin-bottom: 72px;
@@ -835,6 +837,7 @@ fieldset {
     padding: 100px 0;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .foo .con {
@@ -912,13 +915,19 @@ fieldset {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+    text-align: center;
 
 }
 
 
 .spispi  {
     display: flex; 
+}
+
+@media (max-width: 427px) {
+  .spispi  {
     gap: 16px; 
+}
 }
 
 .per {
@@ -953,7 +962,14 @@ fieldset {
     line-height: 1.5; 
     letter-spacing: 0.02em;
     color: #ffffff;
+    text-align: center;
   }
+
+  @media (max-width: 1158px) {
+  .parfoot {
+    text-align: left;
+  }
+   }
 
   .formcla {
     display: flex;
@@ -1027,14 +1043,25 @@ fieldset {
 
   
   .form {
-    display: flex;
-    gap: 24px;
+    margin-left: 80px;
   }
 
   @media (max-width: 767px) {
     .form {
-      flex-direction: column;
-      gap: 16px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1157px) {
+    .form {
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: 1158px) {
+    .form {
+      margin-left: auto;
     }
   }
 
@@ -1283,6 +1310,7 @@ fieldset {
         border: none;
         border-radius: 4px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin: 0 auto;
     }
 
 
@@ -1334,8 +1362,43 @@ fieldset {
   @media (max-width: 767px) {  
 .mobadress {
     display: block;
+    margin-bottom: 40px;
   }
 }
+
+.link-tel {
+  font-size: 24px;
+}
+
+@media (max-width: 427px) {
+  .link-tel {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+.link-tel {
+  color: var(--iris);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+}
+}
+
+.mobspispi
+
+.mobspispi {
+  justify-content: flex-start;
+  gap: 56px;
+  margin-top: 48px;
+}
+
+@media (max-width: 427px) {
+  .mobspispi {
+    gap: 26px;
+  }
+}
+
 
 /**
   |============================
