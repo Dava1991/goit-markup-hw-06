@@ -1061,7 +1061,7 @@ fieldset {
 
   @media (min-width: 1158px) {
     .form {
-      margin-left: auto;
+      margin: 0 auto;
     }
   }
 
