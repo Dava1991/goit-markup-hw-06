@@ -1012,7 +1012,6 @@ fieldset {
   .cnopochka {
     min-width: 165px; 
     height: 40px;
-    display: flex; 
     justify-content: center; 
     align-items: center;
     font-family: "Roboto", sans-serif;
@@ -1030,6 +1029,7 @@ fieldset {
 
   @media (max-width: 767px) {
     .cnopochka {
+      display: flex;
       width: 165px;
       margin: 0 auto;
     }
