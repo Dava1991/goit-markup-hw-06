@@ -1026,9 +1026,16 @@ fieldset {
 
   
   .form {
-    margin-left: 80px;
+    display: flex;
+    gap: 24px;
   }
 
+  @media (max-width: 767px) {
+    .form {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
 
   .cnopochka {
     min-width: 165px; 
