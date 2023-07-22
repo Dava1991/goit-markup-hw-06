@@ -431,20 +431,23 @@ fieldset {
     gap: 24px;
 }
 
-
-.sect-icons {
-    fill: none;
+@media (min-width: 768px) {
+  .liss {
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+}
+
+@media (max-width: 1158px) {
+  .liss {
+    row-gap: 72px;
+}
+}
+
 
 .lili {
   flex-basis: calc((100% - 72px) / 4);
   height: 212px;
-}
-
-@media (max-width: 427px) {
-  .lili {
-    flex-basis: calc((100% - 24px) / 2);
-  }
 }
 
 @media (max-width: 767px) {
@@ -455,7 +458,7 @@ fieldset {
 
 @media (min-width: 768px) and (max-width: 1157px) {
       .lili {
-        flex-basis: 100%;
+      flex-basis: calc((100% - 24px) / 2)
       }
     }
     
@@ -477,6 +480,10 @@ fieldset {
       }
 
 
+
+
+
+
 @media (max-width: 767px) {
   .zagolovok {
     text-align: center;
@@ -492,6 +499,8 @@ fieldset {
   }
 }   
 
+
+
 .icons {
   display: flex;
   align-items: center;
@@ -501,6 +510,8 @@ fieldset {
   padding: 24px 0;
   margin-bottom: 8px;
 }
+
+
 
 @media (min-width: 1158px) {
   .icons {
@@ -519,7 +530,9 @@ fieldset {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-      
+
+
+
 @media (max-width: 1158px) {
       .paragraf {
         font-weight: 500;
@@ -946,6 +959,13 @@ fieldset {
     gap: 24px;
   }
 
+  @media (max-width: 767px) {
+  .formcla {
+    flex-direction: column;
+    gap: 16px;
+  }
+   }
+
   .labcla {
 
   }
@@ -965,8 +985,9 @@ fieldset {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
-    margin-left: auto;
   }
+
+
 
 .incla::placeholder {
     color: #ffffff;
@@ -982,7 +1003,7 @@ fieldset {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 427px) {
   .incla {
     width: 280px;
   }
@@ -1012,6 +1033,7 @@ fieldset {
   .cnopochka {
     min-width: 165px; 
     height: 40px;
+    display: flex;
     justify-content: center; 
     align-items: center;
     font-family: "Roboto", sans-serif;
