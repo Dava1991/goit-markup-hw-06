@@ -922,12 +922,19 @@ fieldset {
 
 .spispi  {
     display: flex; 
-    align-items: center;
 }
 
 @media (max-width: 427px) {
   .spispi  {
     gap: 16px; 
+}
+}
+
+
+@media (max-width: 767px) {
+.socialm {
+  text-align: center;
+  margin: 0 auto;
 }
 }
 
