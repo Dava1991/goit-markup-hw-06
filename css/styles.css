@@ -1054,6 +1054,7 @@ fieldset {
   .form {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
   }
 
   @media only screen and (min-width: 768px) {
