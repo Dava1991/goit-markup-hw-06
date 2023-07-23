@@ -922,6 +922,7 @@ fieldset {
 
 .spispi  {
     display: flex; 
+    align-items: center;
 }
 
 @media (max-width: 427px) {
@@ -1124,7 +1125,8 @@ fieldset {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
+    max-width: 408px;
+    width: calc(100% - 36px);
     min-height: 584px; 
     background-color: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
