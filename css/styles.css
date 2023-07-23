@@ -931,12 +931,13 @@ fieldset {
 }
 
 
-@media (max-width: 767px) {
 .socialm {
-  text-align: center;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
 }
-}
+
 
 .per {
     width: 40px;
@@ -1051,27 +1052,16 @@ fieldset {
 
   
   .form {
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
   }
 
-  @media (max-width: 767px) {
+  @media only screen and (min-width: 768px) {
     .form {
-      text-align: center;
-      margin: 0 auto;
+      padding-bottom: 96px;
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1157px) {
-    .form {
-      margin-left: 0;
-    }
-  }
-
-  @media (min-width: 1158px) {
-    .form {
-      margin: 0 auto;
-    }
-  }
 
   .cnopochka {
     min-width: 165px; 
@@ -1378,6 +1368,7 @@ fieldset {
 .link-tel {
   font-size: 24px;
 }
+
 
 @media (max-width: 427px) {
   .link-tel {
