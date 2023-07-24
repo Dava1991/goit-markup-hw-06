@@ -98,6 +98,7 @@ ol {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
     
 
@@ -1035,18 +1036,6 @@ fieldset {
   
   .incla::-moz-placeholder {
     color: #ffffff;
-  }
-  
-  @media (max-width: 767px) {
-    .incla {
-      width: 398px;
-    }
-  }
-  
-  @media (max-width: 427px) {
-    .incla {
-      width: 280px;
-    }
   }
   
   @media (max-width: 1158px) {
